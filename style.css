@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #252424;
+    background-color: #f8f6f6;
     position: sticky;
     top: 0;
     width: 100%;
@@ -82,7 +82,7 @@ p {
 #home {
     display: flex;
     flex-direction: column;
-    height: 832px;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -92,7 +92,7 @@ p {
     position: absolute;
     top: 0;
     right: 0;
-    height: 900px;
+    height: 150vh;
     width: 100%;
     background: url('images/coverpic.jpg');
     background-repeat: no-repeat;
@@ -113,8 +113,8 @@ p {
 #about {
     display: flex;
     flex-direction: column;
-    background: #f7f7f7;
-    padding: 20px;
+    background: #fff;
+    padding: 54px 0;
 }
 
 #aboutContainer h1 {
@@ -179,7 +179,6 @@ p {
 }
 
 .skills {
-    margin: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -187,7 +186,7 @@ p {
 
 .skillsInfo {
     display: flex;
-    padding: 15px;
+    margin:0 10px;
 }
 
 .skillsRes {
@@ -217,7 +216,7 @@ p {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: 15px;
+    /* margin: 15px; */
 }
 
 .skillsImg h4 {
@@ -232,7 +231,7 @@ p {
     align-items: center;
     background: #e9e8e8;
     color: #eee;
-    padding: 20px;
+    padding: 58px 0;
 }
 
 .portfolio {
@@ -266,7 +265,7 @@ p {
     box-sizing: border-box;
     background: #fff;
     color: rgb(20, 20, 20);
-    padding: 20px;
+    padding: 57px 0;
     text-align: center;
 }
 
@@ -453,5 +452,6 @@ p {
         padding: 0;
         margin: 0;
     }
+ 
 
 }
