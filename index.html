@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,28 +13,33 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <!-- navbar -->
-    <div id="sideNavbar" class="sideNav">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
 
+<body>
+    <header class="nav-menu">
+        <label for="nav-toggle" class="nav-toggle-label"></label>
+    </header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <ul id="menu">
+        <li class="navList"><a href="#home">Home</a></li>
+        <li class="navList"><a href="#about">About</a></li>
+        <li class="navList"><a href="#projects">Projects</a></li>
+        <li class="navList"><a href="#contact">Contact</a></li>
+    </ul>
     <!-- home section -->
     <section id="home">
         <div class="homeContainer">
-            <h1 class="header">Hi! I'M <span>AYSEGUL DEMIR</span></h1>
-            <p>Software Developer</p>
-            <ul>
+            <div class="headerContainer">
+                <h1 class="typed-out">Hi! I'M AYSEGUL DEMIR</h1>
+                <div class="typed-out">I am a Software Developer</div>
+            </div>
+
+            <ul class="socialLink">
                 <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
                 <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
                 <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
-                <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
-                <li><a href="#"><i class='bx bxl-github'></i></a></li>
+                <li><a href="https://www.linkedin.com/in/aysegul-demir-b4b967101/"><i class='bx bxl-linkedin'></i></a>
+                </li>
+                <li><a href="https://github.com/AysegulD"><i class='bx bxl-github'></i></a></li>
             </ul>
         </div>
     </section>
@@ -44,11 +50,10 @@
             <h1 class="heading">About</h1>
             <img class="personalImg" src="/images/aysegul3.jpg" alt="personalpic">
             <div id="personalInfo">
-                <p>Hi there, thanks for visiting my page. My name is Aysegul, I am an enthusiastic junior software
-                developer based in London focused on web development. I am passionate about writing clean, efficient
-                code and creating beautiful, user-friendly websites.</p>
+                <p>Hi there, thanks for visiting my page. My name is Aysegul, I am an enthusiastic junior software developer based in London focused on web development.
+                I am passionate about writing clean, efficient code and creating beautiful, user-friendly websites.</p>
                 <div class="infoBtn">
-                    <a href="#contact" id="button" class="buttonCT">Contact Me <i class="fas fa-envelope"></i></a>
+                    <a href="#contact" id="button" class="buttonCT"> Contact Me <i class="fas fa-envelope"></i></a>
                     <a href="images/AYSEGUL_DEMIR-CV.pdf" id="button" class="buttonCV">Download CV <i
                             class="fas fa-download"></i></a>
                 </div>
@@ -108,41 +113,88 @@
     <section id="projects">
         <h1 class="heading">Projects</h1>
         <div class="portfolio">
-            <a href="https://ayseguld.github.io/my-blog/">
-                <img src="images/react.jpg" alt="reactProject">
+            <div class="portfolioContainer">
+                <img class="image" src="images/musicplayer.png" alt="musicplayer">
                 <div class="projectInfo">
-                    <h4>My Blog</h4><span>React</span>
+                    <h2>Music Player</h2>
+                    <p class="text">Build a music player using JavaScript,DOM. Use the buttons and listen three-song music player.</p>
+                    <div class="portfolioBtn">
+                        <a href="https://github.com/AysegulD/javaScriptProject"><button class="btn">Code <i class='bx bxl-github'></i></button></a>
+                        <a href=" https://demiraysegul.co.uk/javaScriptProject/"><button
+                                class="btn"><span>Live</span> <i class="fas fa-external-link-alt"></i></button></a>
+                    </div>
                 </div>
-            </a>
-            <a href="https://ayseguld.github.io/SimonGame/"><img src="images/javaScript.jpg" alt="simongame">
+            </div>
+            <div class="portfolioContainer">
+                <img src="images/react.png" alt="reactProject">
                 <div class="projectInfo">
-                    <h4>Simon Game</h4><span>JavaScript</span>
+                    <h2>Blog Website</h2>
+                    <p class="text">Create a blog website using modern tools and
+                        technologies: HTML5, CSS3, React.js, Node.js, and MongoDB.</p>
+                    <div class="portfolioBtn">
+                        <a href="https://github.com/AysegulD/my-blog"><button class="btn">Code <i class='bx bxl-github'></i></button></a>
+                        <a href="https://ayseguld.github.io/my-blog/"><button
+                                class="btn"><span>Live</span> <i class="fas fa-external-link-alt"></i></button></a>
+                    </div>
                 </div>
-            </a>
-
-            <a href="https://ayseguld.github.io/DiceGame/"><img src="images/dicegame.jpg" alt="dicegame">
+            </div>
+            <div class="portfolioContainer">
+                <img src="images/dicegame.png" alt="dicegame">
                 <div class="projectInfo">
-                    <h4>Dice Game</h4><span>JavaScript</span>
+                    <h2>Dice Game</h2>
+                    <p class="text">Build a fun game using HTML, CSS, JavaScript.Refresh the page see if there is a winner
+                        or a draw.</p>
+                    <div class="portfolioBtn">
+                        <a href="https://github.com/AysegulD/DiceGame"><button class="btn">Code <i class='bx bxl-github'></i></button></a>
+                        <a href="https://demiraysegul.co.uk/DiceGame/"><button
+                                class="btn"><span>Live</span> <i class="fas fa-external-link-alt"></i></button></a>
+                    </div>
                 </div>
-            </a>
-            <a href="https://ayseguld.github.io/bootstrap/"><img src="images/bootstrap.jpg" alt="tindog">
+            </div>
+            <div class="portfolioContainer">
+                <img src="images/bootstrap.png" alt="tindog">
                 <div class="projectInfo">
-                    <h4>Tindog</h4><span>Bootstrap</span>
+                    <h2>TinDog</h2>
+                    <p class="text">Build a responsive website, utilising bootstrap grid layout system and HTML, CSS.</p>
+                    <div class="portfolioBtn">
+                        <a href="https://github.com/AysegulD/bootstrap"><button class="btn">Code <i class='bx bxl-github'></i></button></a>
+                        <a href="https://demiraysegul.co.uk/TinDog-Start-master/"><button
+                                class="btn"><span>Live</span> <i class="fas fa-external-link-alt"></i></button></a>
+                    </div>
                 </div>
-            </a>
-            <a href="https://ayseguld.github.io/DrumKit/"><img src="images/drumkit.jpg" alt="drumkit">
+            </div>
+            <div class="portfolioContainer">
+              <img src="images/drumkit.png" alt="drumkit">
                 <div class="projectInfo">
-                    <h4>DrumKit</h4><span>JavaScript</span>
+                    <h2>DrumKit</h2>
+                    <p class="text">Using animation and playing sounds with JavaScript.Click the letter or use the
+                        keyboards to listen to the sounds.
+                    </p>
+                    <div class="portfolioBtn">
+                        <a href="https://github.com/AysegulD/DrumKit"><button class="btn">Code <i class='bx bxl-github'></i></button></a>
+                        <a href="https://demiraysegul.co.uk/DrumKit/"><button
+                                class="btn"><span>Live</span> <i class="fas fa-external-link-alt"></i></button></a>
+                    </div>
                 </div>
-            </a>
-
-            <a href=""><img src="images/musicplayer.jpg" alt="musicplayer">
+            </div>
+            <div class="portfolioContainer">
+                <img src="images/simongame.png" alt="simongame">
                 <div class="projectInfo">
-                    <h4>Music Player</h4><span>JavaScript</span>
+                    <h2>Simon Game</h2>
+                    <p class="text">Create a game with animation and sounds.Using HTML5, CSS3, JavaScript, jQuery
+                        programming languages.
+                    </p>
+                    <div class="portfolioBtn">
+                        <a href="https://github.com/AysegulD/SimonGame"><button class="btn">Code <i class='bx bxl-github'></i></button></a>
+                        <a href="https://demiraysegul.co.uk/Simon Game/"><button
+                                class="btn"><span>Live</span> <i class="fas fa-external-link-alt"></i></button></a>
+                    </div>
                 </div>
-            </a>
+            </div>
         </div>
+
     </section>
+
 
     <!-- contact section -->
     <section id="contact">
@@ -152,7 +204,7 @@
             <input type="email" name="email" class="input" placeholder="Email">
             <input type="text" name="subject" class="input" placeholder="Subject">
             <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message..."></textarea>
-            <input type="submit" value="Send Message" id="send">
+            <button id="send" type="submit">Send Message</button>
         </form>
         <div class="findMe">
             <div>
@@ -177,7 +229,7 @@
     <footer>
         <div class="footerContainer">
             <div class="contactInfo">
-                <ul>
+                <ul class="socialLink">
                     <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
                     <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
                     <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
@@ -191,7 +243,7 @@
 
     <!-- </div> -->
 
-    <!-- <script src="script.js"></script> -->
+    <script src="index.js"></script>
 </body>
 
 </html>
